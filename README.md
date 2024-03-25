@@ -41,11 +41,136 @@ Full Subtractor:
 
 VERILOG CODE:
 
-----Type Verilog Code
+logic gates:
+~~~
+module logicgates(a,b,andgate,orgate,xorgate,nandgate,norgate,xnorgate,notgate);
+input a,b;
+output andgate,orgate,xorgate,nandgate,norgate,xnorgate,notgate;
+and(andgate,a,b);
+or(orgate,a,b);
+xor(xorgate,a,b);
+nand(nandgate,a,b);  
+nor(norgate,a,b);
+xnor(xnorgate,a,b);
+not(notgate,a);
+endmodule
+~~~
 
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+half adder:
+~~~
+module half_adder(a,b,sum,carry);
+input a,b;
+output sum,carry; 
+xor(sum,a,b);
+and(carry,a,b);
+endmodule
+~~~
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Full Adder:
+~~~
+module fulladder(S, Co, X, Y, Ci);
+  input X, Y, Ci;
+  output S, Co;
+  wire w1,w2,w3;
+  //Structural code for one bit full adder
+  xor G1(w1, X, Y);
+  xor G2(S, w1, Ci);
+  and G3(w2, w1, Ci);
+  and G4(w3, X, Y);
+  or G5(Co, w2, w3);
+endmodule
+module rippe_adder(S, Cout, X, Y,Cin);
+ input [3:0] X, Y;// Two 4-bit inputs
+ input Cin;
+ output [3:0] S;
+ output Cout;
+ wire w1, w2, w3;
+ fulladder u1(S[0], w1,X[0], Y[0], Cin);
+ fulladder u2(S[1], w2,X[1], Y[1], w1);
+ fulladder u3(S[2], w3,X[2], Y[2], w2);
+ fulladder u4(S[3], Cout,X[3], Y[3], w3);
+endmodule
+~~~
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Half Subtractor:
+~~~
+module halfsubtractor( D,Bo,A,B);
+input A,B;
+output D,Bo;
+wire w1;
+xor (D,A,B);
+not (w1,B);
+and (Bo,B,w1);
+endmodule
+~~~
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Full Subtractor:
+~~~
+module full_subtractor(a, b, c,D, Bout);
+input a, b, c;
+output D, Bout;
+  assign D = a ^ b ^ c;
+  assign Bout = (~a & b) | (~(a ^ b) & c);
+endmodule  
+~~~
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+8 bit ripple carry adder:
+~~~
+module fulladder(S, Co, X, Y, Ci);
+  input X, Y, Ci;
+  output S, Co;
+  wire w1,w2,w3;
+  //Structural code for one bit full adder
+  xor G1(w1, X, Y);
+  xor G2(S, w1, Ci);
+  and G3(w2, w1, Ci);
+  and G4(w3, X, Y);
+  or G5(Co, w2, w3);
+endmodule
+module rippe_adder(S, Cout, X, Y,Cin);
+ input [7:0] X, Y;// Two 4-bit inputs
+ input Cin;
+ output [7:0] S;
+ output Cout;
+ wire w1, w2, w3, w4, w5, w6, w7;
+ // instantiating 8 1-bit full adders in Verilog
+ fulladder u1(S[0], w1,X[0], Y[0], Cin);
+ fulladder u2(S[1], w2,X[1], Y[1], w1);
+ fulladder u3(S[2], w3,X[2], Y[2], w2);
+ fulladder u4(S[3], w4,X[3], Y[3], w3);
+ fulladder u5(S[4], w5,X[4], Y[4], w4);
+ fulladder u6(S[5], w6,X[5], Y[5], w5);
+ fulladder u7(S[6], w7,X[6], Y[6], w6);
+ fulladder u8(S[7], Cout,X[7], Y[7], w7);
+endmodule
+~~~
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
 OUTPUT:
+Logic gates:
+![Screenshot 2024-03-04 111823](https://github.com/Gokuls2003/VLSI-LAB-EXP-1/assets/159005418/274701a9-b2c4-435a-b0fc-ea2024578ace)
 
------Place a Waveform Generated from Xilinx ISE
+Half adder:
+![Screenshot 2024-03-25 113852](https://github.com/Gokuls2003/VLSI-LAB-EXP-1/assets/159005418/0643adc7-208c-4041-ad98-c34f4a03e186
+
+Full adder:
+![Screenshot 2024-03-25 105831](https://github.com/Gokuls2003/VLSI-LAB-EXP-1/assets/159005418/883e527d-0697-4d04-bc63-14b069644fe4)
+
+Half Subtractor:
+![Screenshot 2024-03-25 105229](https://github.com/Gokuls2003/VLSI-LAB-EXP-1/assets/159005418/d48b4490-d039-42e7-b55a-ab4187c7327c)
+
+Full Subtractor:
+![Screenshot 2024-03-25 110408](https://github.com/Gokuls2003/VLSI-LAB-EXP-1/assets/159005418/19bcc05c-fe0d-456b-8bae-ab87e7b8ea53)
+
+8 bit ripple carry adder:
+![Screenshot 2024-03-25 111034](https://github.com/Gokuls2003/VLSI-LAB-EXP-1/assets/159005418/351b3750-65ae-44eb-97aa-e4856cecb779)
+
 
 RESULT:
+ simulation and synthesis of Logic Gates,Adders and Subtractor are succesfully verified using Xilinx ISE.
+
 
