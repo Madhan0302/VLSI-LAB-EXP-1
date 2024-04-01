@@ -41,7 +41,10 @@ Full Subtractor:
 
 VERILOG CODE:
 
-```
+----------------------------------
+
+FULL ADDER
+
 module fulladder(sum,cout, a,b,c);
 input a,b,c;
 output sum,cout;
@@ -56,7 +59,11 @@ output sum,cout;
   or o2(cout,w5,w4);
     
 endmodule
-```
+
+---------------------------------
+
+FULL SUBRACTOR
+
 module full_sub(borrow,diff,a,b,c);
 output borrow,diff;
 input a,b,c;
@@ -68,14 +75,22 @@ and a2(w5,w1,c);
 and a3(w6,b,c);
 or o1(borrow,w4,w5,w6);
 endmodule
-```
+
+-------------------------------------
+
+HALF ADDER
+
 module half_adder(a,b,sum,carry);
 input a,b;
 output sum,carry; // sum and carry
 or(sum,a,b);
 and(carry,a,b);
 endmodule
-```
+
+-------------------------------------
+
+HALF SUBRACTOR
+
 module halfsubtractor( D,Bo,A,B);
 input A,B;
 output D,Bo;
@@ -84,7 +99,11 @@ xor (D,A,B);
 not (w1,B);
 and (Bo,B,w1);
 endmodule
-```
+
+-------------------------------------
+
+LOGIC GATES
+
 module logicgates(a,b,andgate,orgate,xorgate,nandgate,norgate,xnorgate,notgate);
 input a,b;
 output andgate,orgate,xorgate,nandgate,norgate,xnorgate,notgate;
@@ -96,7 +115,11 @@ nor(norgate,a,b);
 xnor(xnorgate,a,b);
 not(notgate,a);
 endmodule
-```
+
+--------------------------------------
+
+RIPPLECARRYADDER 4BITS
+
 module fulladder(S, Co, X, Y, Ci);
   input X, Y, Ci;
   output S, Co;
@@ -120,9 +143,55 @@ module rippe_adder(S, Cout, X, Y,Cin);
  fulladder u4(S[3], Cout,X[3], Y[3], w3);
 endmodule
 
+-----------------------------------------------
+
+RIPPLECARRYADDER 8BITS
+
+module fulladder(S, Co, X, Y, Ci);
+  input X, Y, Ci;
+  output S, Co;
+  wire w1,w2,w3;
+  //Structural code for one bit full adder
+  xor G1(w1, X, Y);
+  xor G2(S, w1, Ci);
+  and G3(w2, w1, Ci);
+  and G4(w3, X, Y);
+  or G5(Co, w2, w3);
+endmodule
+module rippe_adder(S, Cout, X, Y,Cin);
+ input [7:0] X, Y;// Two 4-bit inputs
+ input Cin;
+ output [7:0] S;
+ output Cout;
+ wire w1, w2, w3, w4, w5, w6, w7;
+ // instantiating 8 1-bit full adders in Verilog
+ fulladder u1(S[0], w1,X[0], Y[0], Cin);
+ fulladder u2(S[1], w2,X[1], Y[1], w1);
+ fulladder u3(S[2], w3,X[2], Y[2], w2);
+ fulladder u4(S[3], w4,X[3], Y[3], w3);
+ fulladder u5(S[4], w5,X[4], Y[4], w4);
+ fulladder u6(S[5], w6,X[5], Y[5], w5);
+ fulladder u7(S[6], w7,X[6], Y[6], w6);
+ fulladder u8(S[7], Cout,X[7], Y[7], w7);
+endmodule
+
+---------------------------------------------
+
 OUTPUT:
 
------Place a Waveform Generated from Xilinx ISE
+FULL ADDER:![image](https://github.com/Madhan0302/VLSI-LAB-EXP-1/assets/160517887/49703017-589b-4387-bce9-41bb6536c58b)
+
+FULL SUBRACTOR:![image](https://github.com/Madhan0302/VLSI-LAB-EXP-1/assets/160517887/699cf31c-70e9-4b48-bc18-c03af5b6c9ea)
+
+HALF ADDER:![image](https://github.com/Madhan0302/VLSI-LAB-EXP-1/assets/160517887/0a99c0fb-40a0-4dfb-8624-e1055d80199d)
+
+HALF SUBRACTOR:
+LOGIC GATES:
+RIPPLECARRY 4BITS:
+RIPPLECARRY 8BITS:
+
+
+
 
 RESULT:
 
