@@ -48,7 +48,7 @@ VERILOG CODE:
 ----------------------------------
 
 FULL ADDER
-
+~~~
 module fulladder(sum,cout, a,b,c);
 input a,b,c;
 output sum,cout;
@@ -65,7 +65,7 @@ output sum,cout;
 endmodule
 
 ---------------------------------
-
+~~~
 FULL SUBRACTOR
 
 module full_sub(borrow,diff,a,b,c);
@@ -83,7 +83,7 @@ endmodule
 -------------------------------------
 
 HALF ADDER
-
+~~~
 module half_adder(a,b,sum,carry);
 input a,b;
 output sum,carry; // sum and carry
@@ -94,7 +94,7 @@ endmodule
 -------------------------------------
 
 HALF SUBRACTOR
-
+~~~
 module halfsubtractor( D,Bo,A,B);
 input A,B;
 output D,Bo;
@@ -107,7 +107,7 @@ endmodule
 -------------------------------------
 
 LOGIC GATES
-
+~~~
 module logicgates(a,b,andgate,orgate,xorgate,nandgate,norgate,xnorgate,notgate);
 input a,b;
 output andgate,orgate,xorgate,nandgate,norgate,xnorgate,notgate;
@@ -123,7 +123,7 @@ endmodule
 --------------------------------------
 
 RIPPLECARRYADDER 4BITS
-
+~~~
 module fulladder(S, Co, X, Y, Ci);
   input X, Y, Ci;
   output S, Co;
@@ -150,7 +150,7 @@ endmodule
 -----------------------------------------------
 
 RIPPLECARRYADDER 8BITS
-
+~~~
 module fulladder(S, Co, X, Y, Ci);
   input X, Y, Ci;
   output S, Co;
