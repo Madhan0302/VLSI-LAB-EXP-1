@@ -167,6 +167,9 @@ Half Subtractor:
 Full Subtractor:
 ![Screenshot 2024-03-25 110408](https://github.com/Gokuls2003/VLSI-LAB-EXP-1/assets/159005418/19bcc05c-fe0d-456b-8bae-ab87e7b8ea53)
 
+4 bit ripple carry adder:
+![image](https://github.com/Gokuls2003/VLSI-LAB-EXP-1/assets/160517887/52f59c5b-c006-4481-9263-7067e6ab9f81)
+
 8 bit ripple carry adder:
 ![Screenshot 2024-03-25 111034](https://github.com/Gokuls2003/VLSI-LAB-EXP-1/assets/159005418/351b3750-65ae-44eb-97aa-e4856cecb779)
 
