@@ -179,19 +179,31 @@ endmodule
 
 OUTPUT:
 
-FULL ADDER:![image](https://github.com/Madhan0302/VLSI-LAB-EXP-1/assets/160517887/49703017-589b-4387-bce9-41bb6536c58b)
+FULL ADDER:
+![image](https://github.com/Madhan0302/VLSI-LAB-EXP-1/assets/160517887/49703017-589b-4387-bce9-41bb6536c58b)
 
-FULL SUBRACTOR:![image](https://github.com/Madhan0302/VLSI-LAB-EXP-1/assets/160517887/699cf31c-70e9-4b48-bc18-c03af5b6c9ea)
+FULL SUBRACTOR:
+![image](https://github.com/Madhan0302/VLSI-LAB-EXP-1/assets/160517887/699cf31c-70e9-4b48-bc18-c03af5b6c9ea)
 
-HALF ADDER:![image](https://github.com/Madhan0302/VLSI-LAB-EXP-1/assets/160517887/0a99c0fb-40a0-4dfb-8624-e1055d80199d)
+HALF ADDER:
+![image](https://github.com/Madhan0302/VLSI-LAB-EXP-1/assets/160517887/0a99c0fb-40a0-4dfb-8624-e1055d80199d)
 
 HALF SUBRACTOR:
+![image](https://github.com/Madhan0302/VLSI-LAB-EXP-1/assets/160517887/b11aa1ea-ac43-4b0b-8775-7e8629b269af)
+
 LOGIC GATES:
+![image](https://github.com/Madhan0302/VLSI-LAB-EXP-1/assets/160517887/8e43809f-bb5e-496e-96eb-7ccc6bf0f302)
+
 RIPPLECARRY 4BITS:
+![image](https://github.com/Madhan0302/VLSI-LAB-EXP-1/assets/160517887/da237107-78a8-4da8-a1b2-d8d6e53f0844)
+
 RIPPLECARRY 8BITS:
+![image](https://github.com/Madhan0302/VLSI-LAB-EXP-1/assets/160517887/2784f922-7c6e-4581-b6b7-e7c65f6703a9)
+
 
 
 
 
 RESULT:
+      Simulation and synthesis of Logic Gates,Adders and Subtractor are succesfully verified using Xilinx ISE.
 
