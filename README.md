@@ -34,8 +34,7 @@ Full Subtractor:
 
 4 Bit Ripple Carry Adder:
 
-
-
+![image](https://github.com/Madhan0302/VLSI-LAB-EXP-1/assets/160517887/24e31608-c29b-481e-82a4-4778e0967e45)
 
 
 8 Bit Ripple Carry Adder
