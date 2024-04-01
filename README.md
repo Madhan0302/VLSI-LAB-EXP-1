@@ -63,11 +63,12 @@ output sum,cout;
   or o2(cout,w5,w4);
     
 endmodule
+~~~
 
 ---------------------------------
-~~~
-FULL SUBRACTOR
 
+FULL SUBRACTOR
+~~~
 module full_sub(borrow,diff,a,b,c);
 output borrow,diff;
 input a,b,c;
@@ -79,7 +80,7 @@ and a2(w5,w1,c);
 and a3(w6,b,c);
 or o1(borrow,w4,w5,w6);
 endmodule
-
+~~~
 -------------------------------------
 
 HALF ADDER
@@ -90,7 +91,7 @@ output sum,carry; // sum and carry
 or(sum,a,b);
 and(carry,a,b);
 endmodule
-
+~~~
 -------------------------------------
 
 HALF SUBRACTOR
@@ -103,7 +104,7 @@ xor (D,A,B);
 not (w1,B);
 and (Bo,B,w1);
 endmodule
-
+~~~
 -------------------------------------
 
 LOGIC GATES
@@ -119,7 +120,7 @@ nor(norgate,a,b);
 xnor(xnorgate,a,b);
 not(notgate,a);
 endmodule
-
+~~~
 --------------------------------------
 
 RIPPLECARRYADDER 4BITS
@@ -146,7 +147,7 @@ module rippe_adder(S, Cout, X, Y,Cin);
  fulladder u3(S[2], w3,X[2], Y[2], w2);
  fulladder u4(S[3], Cout,X[3], Y[3], w3);
 endmodule
-
+~~~
 -----------------------------------------------
 
 RIPPLECARRYADDER 8BITS
@@ -178,7 +179,7 @@ module rippe_adder(S, Cout, X, Y,Cin);
  fulladder u7(S[6], w7,X[6], Y[6], w6);
  fulladder u8(S[7], Cout,X[7], Y[7], w7);
 endmodule
-
+~~~
 ---------------------------------------------
 
 OUTPUT:
