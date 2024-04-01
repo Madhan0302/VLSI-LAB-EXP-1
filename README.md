@@ -68,6 +68,14 @@ and a2(w5,w1,c);
 and a3(w6,b,c);
 or o1(borrow,w4,w5,w6);
 endmodule
+```
+module half_adder(a,b,sum,carry);
+input a,b;
+output sum,carry; // sum and carry
+or(sum,a,b);
+and(carry,a,b);
+endmodule
+```
 
 OUTPUT:
 
