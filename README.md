@@ -187,23 +187,49 @@ OUTPUT:
 FULL ADDER:
 ![image](https://github.com/Madhan0302/VLSI-LAB-EXP-1/assets/160517887/49703017-589b-4387-bce9-41bb6536c58b)
 
+Elabrated diagram:
+![image](https://github.com/Madhan0302/VLSI-LAB-EXP-1/assets/160517887/c81fbe8a-101e-439c-a654-302e3ee44dc2)
+
+
 FULL SUBRACTOR:
 ![image](https://github.com/Madhan0302/VLSI-LAB-EXP-1/assets/160517887/699cf31c-70e9-4b48-bc18-c03af5b6c9ea)
+
+Elabrated diagram:
+![image](https://github.com/Madhan0302/VLSI-LAB-EXP-1/assets/160517887/0856e18e-ffb0-4faf-9bca-3c0876dd37ea)
+
 
 HALF ADDER:
 ![image](https://github.com/Madhan0302/VLSI-LAB-EXP-1/assets/160517887/0a99c0fb-40a0-4dfb-8624-e1055d80199d)
 
+Elabrated diagram:
+![image](https://github.com/Madhan0302/VLSI-LAB-EXP-1/assets/160517887/9c2407e4-0716-4558-9c38-54d18cad4b0d)
+
+
 HALF SUBRACTOR:
 ![image](https://github.com/Madhan0302/VLSI-LAB-EXP-1/assets/160517887/b11aa1ea-ac43-4b0b-8775-7e8629b269af)
+
+Elabrated diagram:
+![image](https://github.com/Madhan0302/VLSI-LAB-EXP-1/assets/160517887/0292da5b-9624-44c4-a137-00f7a689779c)
+
 
 LOGIC GATES:
 ![image](https://github.com/Madhan0302/VLSI-LAB-EXP-1/assets/160517887/8e43809f-bb5e-496e-96eb-7ccc6bf0f302)
 
+Elabrated diagram:
+![image](https://github.com/Madhan0302/VLSI-LAB-EXP-1/assets/160517887/e2efc3da-e763-4fc5-80e0-51d31b599935)
+
 RIPPLECARRY 4BITS:
 ![image](https://github.com/Madhan0302/VLSI-LAB-EXP-1/assets/160517887/da237107-78a8-4da8-a1b2-d8d6e53f0844)
 
+Elabrated diagram:
+![image](https://github.com/Madhan0302/VLSI-LAB-EXP-1/assets/160517887/8b732261-f621-4c63-b3bc-85531e02665c)
+
+
 RIPPLECARRY 8BITS:
 ![image](https://github.com/Madhan0302/VLSI-LAB-EXP-1/assets/160517887/2784f922-7c6e-4581-b6b7-e7c65f6703a9)
+
+Elabrated diagram:
+![image](https://github.com/Madhan0302/VLSI-LAB-EXP-1/assets/160517887/91d2a1c6-1fdf-4e2c-9514-1642e542885e)
 
 
 
