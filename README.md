@@ -1,7 +1,7 @@
 # Simulate and Synthesis Logic Gates,Address and  Subractors Using Vivado 
 AIM: To Simulate and Synthesis Logic Gates,Adders and Subtractor using Vivado Software
 
-APPARATUS REQUIRED: Vivado ML 2023.2
+APPARATUS REQUIRED:Vivado™ ML 2023.2
 
 PROCEDURE: 
 1. Open Vivado: Launch Xilinx Vivado software on your computer.
