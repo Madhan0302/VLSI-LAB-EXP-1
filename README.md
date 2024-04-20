@@ -1,5 +1,5 @@
 # Simulate and Synthesis Logic Gates,Address and  Subractors Using Vivado 
-AIM: To simulate and synthesis Logic Gates,Adders and Subtractor using vivado software
+AIM: To Simulate and Synthesis Logic Gates,Adders and Subtractor using Vivado Software
 
 APPARATUS REQUIRED: Vivado ML 2023.2
 
