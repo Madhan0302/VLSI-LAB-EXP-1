@@ -247,6 +247,9 @@ RIPPLECARRY 8BITS:
 ![image](https://github.com/Madhan0302/VLSI-LAB-EXP-1/assets/160517887/2784f922-7c6e-4581-b6b7-e7c65f6703a9)
 
 
+ 
+ 
+ 
 Elabrated diagram:
 ![image](https://github.com/Madhan0302/VLSI-LAB-EXP-1/assets/160517887/91d2a1c6-1fdf-4e2c-9514-1642e542885e)
 
